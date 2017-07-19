@@ -10,3 +10,15 @@ DEBUG 2017-07-19 17:31:57,885 - Making request: POST https://accounts.google.com
 DEBUG 2017-07-19 17:31:57,893 - Starting new HTTPS connection (1): accounts.google.com
 DEBUG 2017-07-19 17:31:58,548 - https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
 INFO 2017-07-19 17:32:00,168 - labels for ['fractal art', 'computer wallpaper', 'symmetry', 'pattern', 'line', 'art', 'graphics'] 
+INFO 2017-07-19 17:33:43,935 - main() Executed with logger.level=10
+INFO 2017-07-19 17:33:43,935 - getLabels(resources/abstract2.jpg)
+DEBUG 2017-07-19 17:33:45,263 - Making request: POST https://accounts.google.com/o/oauth2/token
+DEBUG 2017-07-19 17:33:45,329 - Starting new HTTPS connection (1): accounts.google.com
+DEBUG 2017-07-19 17:33:45,987 - https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+INFO 2017-07-19 17:33:52,429 - labels for ['blue', 'light', 'special effects', 'darkness', 'computer wallpaper', 'water', 'sky', 'night', 'space'] 
+INFO 2017-07-19 17:34:09,323 - main() Executed with logger.level=10
+INFO 2017-07-19 17:34:09,323 - getLabels(resources/abstract3.jpg)
+DEBUG 2017-07-19 17:34:10,570 - Making request: POST https://accounts.google.com/o/oauth2/token
+DEBUG 2017-07-19 17:34:10,578 - Starting new HTTPS connection (1): accounts.google.com
+DEBUG 2017-07-19 17:34:11,279 - https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+INFO 2017-07-19 17:34:12,972 - labels for ['sky', 'painting', 'watercolor paint', 'water', 'geological phenomenon', 'atmosphere', 'phenomenon', 'art', 'acrylic paint', 'computer wallpaper'] 
