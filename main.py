@@ -18,7 +18,7 @@ logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG,
 	filemode = "a")
 
 #root logger
-logger = logging.getLogger()
+loggerß = logging.getLogger()
 
 def getLabels(filename):
 	"""
@@ -33,6 +33,7 @@ def getLabels(filename):
 	labels: list : list of labels identified in filename
 	"""
 	logger.info("getLabels({0})".format(filename))
+	
 		
 	vision_client = vision.Client() # Instantiates a client
 	file_name = os.path.join(os.path.dirname(__file__),filename)# The name of the image file to annotate
