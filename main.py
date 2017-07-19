@@ -1,30 +1,25 @@
 
-# import argparse
-# parser = argparse.ArgumentParser()
-# parser.add_argument('--foo', help='foo help')
-# args = parser.parse_args()
-
-# def defaultActionPrint():
-# 	print("Invalid argument, to see usage python main.py -h")
-# In [133]: def act2():
-#      ...:     print('act2')
-#      ...:     
-# In [134]: parser=argparse.ArgumentParser()
-# In [135]: parser.add_argument('-a',action='store_const',default=act1,const=act2);
-
-
 import io
 import os
+
+import argparse
+import sys
+
 
 # Imports the Google Cloud client library
 from google.cloud import vision
 
-def getLabels():
+
+# def defaultActionPrint():
+# 	print("Invalid argument, to see usage python main.py -h")
+
+def getLabels(filename):
+	
 	# Instantiates a client
 	vision_client = vision.Client()
 
 	# The name of the image file to annotate
-	file_name = os.path.join(os.path.dirname(__file__),'resources/car_me_and_a_naartjie.jpg')
+	file_name = os.path.join(os.path.dirname(__file__),'resources/'+filename)
 
 	# Loads the image into memory
 	with io.open(file_name, 'rb') as image_file:
@@ -35,15 +30,25 @@ def getLabels():
 
 	return labels
 
-
-
 def main():
-	print("getting labels")
-	labels = getLabels()
+
+	filename = sys.argv[1]
+	print("getting labels for "+filename)
+
+	labels = getLabels(filename)
 
 	print('Labels:')
 	for label in labels:
 	    print(label.description)
+
+
+
+# parser = argparse.ArgumentParser()
+# parser.add_argument('--labels', help='labels takes the name of an image stored in resources, ex. cat.jpg'
+# 	, action='store_const'
+# 	, default=defaultActionPrint
+# 	, const=getLabels)
+# args = parser.parse_args()
 
 #calling main() function on script excecution
 if __name__ == '__main__':
