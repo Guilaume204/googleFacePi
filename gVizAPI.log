@@ -1,0 +1,12 @@
+INFO 2017-07-19 17:31:06,247 - main() Executed with logger.level=10
+INFO 2017-07-19 17:31:06,247 - getLabels(resources/cat.jpg)
+DEBUG 2017-07-19 17:31:07,437 - Making request: POST https://accounts.google.com/o/oauth2/token
+DEBUG 2017-07-19 17:31:07,445 - Starting new HTTPS connection (1): accounts.google.com
+DEBUG 2017-07-19 17:31:08,162 - https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+INFO 2017-07-19 17:31:10,252 - labels for ['cat', 'black', 'mammal', 'whiskers', 'small to medium sized cats', 'cat like mammal', 'black cat', 'darkness', 'tabby cat', 'domestic short haired cat'] 
+INFO 2017-07-19 17:31:56,537 - main() Executed with logger.level=10
+INFO 2017-07-19 17:31:56,537 - getLabels(resources/abstract1.jpg)
+DEBUG 2017-07-19 17:31:57,885 - Making request: POST https://accounts.google.com/o/oauth2/token
+DEBUG 2017-07-19 17:31:57,893 - Starting new HTTPS connection (1): accounts.google.com
+DEBUG 2017-07-19 17:31:58,548 - https://accounts.google.com:443 "POST /o/oauth2/token HTTP/1.1" 200 None
+INFO 2017-07-19 17:32:00,168 - labels for ['fractal art', 'computer wallpaper', 'symmetry', 'pattern', 'line', 'art', 'graphics'] 

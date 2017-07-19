@@ -1,0 +1,7 @@
+#Major Changes
+- now uses full filename instead of filename after resources/ 
+- implemented logger thanks to https://www.youtube.com/watch?v=g8nQ90Hk328&t=28s
+
+
+
+#Minor Changes
